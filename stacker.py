@@ -119,16 +119,6 @@ def run_stacker(clfs):
             clf.fit(X_train, y_train)
             y_submission = clf.predict_proba(X_test)
             dataset_blend_train[test, row_cnt: row_cnt+20] = y_submission
-            """if j==0:
-                dataset_blend_train[test, 0:20] = y_submission
-            elif j==1:
-                dataset_blend_train[test, 20:40] = y_submission
-            elif j==2:
-                dataset_blend_train[test, 40:60] = y_submission
-            elif j==3:
-                dataset_blend_train[test, 60:80] = y_submission
-            else:
-                dataset_blend_train[test, 80:] = y_submission"""
             dataset_blend_test_j += clf.predict_proba(X_submission)
         dataset_blend_test[:, row_cnt: row_cnt+20] = dataset_blend_test_j / 10.
         row_cnt += 20

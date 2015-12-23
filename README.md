@@ -10,4 +10,4 @@ The code was heavily inspired by an entry for a past Kaggle competition entry by
 * Extra Trees Ensemble Classifier
 * and Bagging Classifier using averaged Logistic Regression classifiers. 
 
-A final Logistic Regression classifier was trained on the class probabilities predicted from each of these component models. 
+A final Logistic Regression classifier was trained on the class probabilities predicted from each of these component models, and this model was used to make predictions for the final submission. 

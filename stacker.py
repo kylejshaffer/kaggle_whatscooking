@@ -2,6 +2,11 @@
 Code for Stacking Idea
 Author: Kyle Shaffer
 Competition: Kaggle - What's Cooking?
+
+This code is heavily influenced by example code from a past Kaggle entry from @emanuele.
+Thanks for posting the code!
+
+Original link here: https://github.com/emanuele/kaggle_pbr/blob/master/blend.py
 """
 
 # Import relevant libraries
